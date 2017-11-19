@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    >
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/vp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/vp"
+    android:layout_alignParentStart="true"
+    android:background="#fff"
+    android:layout_marginTop="28dp">
+    <TextView
+        android:id="@+id/commodity_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textView"/>
+    <TextView
+        android:id="@+id/commodity_text2"
+        android:text="textView"
+        android:textColor="#f00"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:textSize="30dp"
+        android:id="@+id/commodity_text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="textView"
+        android:layout_marginTop="75dp"/>
+</RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal"
+    android:layout_alignParentStart="true">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:gravity="center"
+        android:layout_weight="1">
+        <ImageView
+            android:src="@drawable/dianpu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店铺"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:gravity="center"
+        android:layout_weight="1">
+        <ImageView
+            android:src="@drawable/dianpu2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="店铺"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:gravity="center"
+        android:layout_weight="1">
+       <TextView
+           android:id="@+id/zhifu"
+           android:layout_width="match_parent"
+           android:layout_height="51dp"
+           android:text="立即支付"
+           android:textColor="#fff"
+           android:gravity="center"
+           android:background="#e0620d"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/commodity_gouwuche"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="加入购物车"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:background="#e0620d"/>
+
+
+
+</LinearLayout>
+</RelativeLayout>

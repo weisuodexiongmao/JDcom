@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/logneditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="请输入账号"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/logneditText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/logneditText"
+        android:layout_below="@+id/logneditText"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="请输入密码"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logneditText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:onClick="denglu"
+        android:text="登录" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:onClick="register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="注册"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/button" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="账号："
+        android:textSize="24sp"
+        android:layout_alignBaseline="@+id/logneditText"
+        android:layout_alignBottom="@+id/logneditText"
+        android:layout_toStartOf="@+id/logneditText" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="密码："
+        android:layout_alignBaseline="@+id/logneditText2"
+        android:layout_alignBottom="@+id/logneditText2"
+        android:layout_toStartOf="@+id/logneditText2" />
+</RelativeLayout>

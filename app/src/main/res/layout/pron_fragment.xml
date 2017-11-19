@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5"
+    >
+
+    <RelativeLayout
+        android:id="@+id/pron_Rll"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/logn_iamge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="23dp"
+            android:src="@drawable/touxiang2" />
+
+        <TextView
+            android:id="@+id/logn_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/logn_iamge"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="11dp"
+            android:layout_toEndOf="@+id/logn_iamge"
+            android:text="登录/注册"
+
+            />
+
+        <ImageView
+            android:id="@+id/settings_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/logn_textview"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="17dp"
+            android:src="@drawable/shezhi" />
+    </RelativeLayout>
+<LinearLayout
+    android:background="#fff"
+    android:id="@+id/pron_lin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@+id/pron_Rll"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="29dp">
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/daifukuan"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待付款"/>
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/daishouhuo"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待收货"/>
+    </LinearLayout>    <LinearLayout
+    android:gravity="center"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/daipingjia"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="待评价"/>
+</LinearLayout>    <LinearLayout
+    android:gravity="center"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tuihuo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="退货/售后"/>
+</LinearLayout>    <LinearLayout
+    android:gravity="center"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/dingdan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dingdan"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的订单"/>
+</LinearLayout>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/Receiving_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shouhuo"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="地址管理"/>
+    </LinearLayout>
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/pron_lin"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="54dp"
+        android:layout_marginStart="99dp"
+        android:text="TextView"
+        android:visibility="gone"/>
+
+</RelativeLayout>
